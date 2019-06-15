@@ -9,7 +9,9 @@ class ComunicacaoWeather
         retorno = JSON.parse(Net::HTTP.get(URI(url)))
 
         cidade = {
-            "temperatura": retorno["main"]["temp"]
+            "temperatura": retorno["main"]["temp"],
+            "temperatura minima": retorno["main"]["temp_min"],
+            "temperatura maxima": retorno["main"]["temp_max"]
         }
     end
 end
