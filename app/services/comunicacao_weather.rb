@@ -4,8 +4,12 @@ class ComunicacaoWeather
 
         @cidade = cidade
 
-        url = "https://api.openweathermap.org/data/2.5/weather?&APPID=b3338227dd5c58654213649658c0d76e&q=#{@cidade}"
+        url = "https://api.openweathermap.org/data/2.5/weather?q=#{@cidade},BR&APPID=b3338227dd5c58654213649658c0d76e"
 
         retorno = JSON.parse(Net::HTTP.get(URI(url)))
+
+        cidade = {
+            
+        }
     end
 end
