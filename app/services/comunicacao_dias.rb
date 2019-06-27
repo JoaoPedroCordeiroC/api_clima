@@ -1,9 +1,9 @@
-class BuscaDias
+class ComunicacaoDias
     require 'net/http'
     require 'json' 
     require 'time'
 
-    def buscar_CincoDias(cidade)
+    def buscar_dias(cidade)
 
         @cidade = cidade
 
