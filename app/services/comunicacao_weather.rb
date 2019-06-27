@@ -13,7 +13,8 @@ class ComunicacaoWeather
             "Temperatura minima": retorno["main"]["temp_min"],
             "Temperatura maxima": retorno["main"]["temp_max"],
             "Pressão do ar": retorno["main"]["pressure"],
-            "Umidade": retorno["main"]["humidity"]
+            "Umidade": retorno["main"]["humidity"],
+            "Nuvens": retorno["clouds"]["all"]
         }
     end
 end
